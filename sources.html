@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Sources & Disclaimers</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      max-width: 800px;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      color: #005a9c;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      list-style-type: disc;
+    }
+
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      margin-top: 1.5rem;
+    }
+
+    .back-link {
+      margin-top: 2rem;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sources & Disclaimers</h1>
+
+  <div class="section">
+    <h2>Sources</h2>
+    <ul>
+      <li><strong>Karel distance:</strong> <a href="https://fastestknowntime.com/karel" target="_blank">fastestknowntime.com/karel</a></li>
+      <li><strong>Karel timing:</strong> <a href="https://fastestknowntime.com/fkt/karel-sabbe-appalachian-trail-2018-08-28" target="_blank">FKT record page</a> and <a href="https://www.strava.com/athletes/13185267" target="_blank">Strava profile</a></li>
+      <li><strong>John distance & timing:</strong> <a href="https://www.strava.com/pros/16389235" target="_blank">Strava profile</a></li>
+      <li><strong>Tara distance & timing:</strong> <a href="https://postimg.cc/zbdZ6XHj" target="_blank">Screenshot of distance table</a> (authenticity unverified - best source I could find)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Disclaimers</h2>
+    <p><strong>Karel:</strong> The GPX file from the FKT site has broken timestamps. After correction, I calculated less than 1800 miles. This is clearly inaccurate. I manually analyzed the GPX track to determine daily start and stop times, cross-checking with the official distance table and Karel's Strava activity logs. The resulting moving/rest times are only rough estimates.</p>
+
+    <p><strong>John:</strong> Strava GPX files lack timestamps. Instead, I extracted lap data manually. His pace may be inflated if pause times aren't reflected in laps, though moving and elapsed times are mostly consistent. Rest time is calculated as: <em>next start time – previous elapsed time</em>. Times don't match the official tracker splits, likely due to GPS errors. As of day 6, my ~50-mile lead estimate aligns with the live map measurement.</p>
+
+    <p><strong>Tara:</strong> The GPX from the FKT page is missing Aug 14–20. I used the table screenshot instead. Since the GPX data and table disagree even on the first two days, I assume the GPX underreports distance and chose the table as the more complete source.</p>
+  </div>
+
+  <div class="back-link">
+    <a href="index.html">← Back to main page</a>
+  </div>
+</body>
+</html>
+
+
